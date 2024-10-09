@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather App
 
-## Getting Started
+## Descrição do Projeto
 
-First, run the development server:
+**Weather App** é uma aplicação web moderna desenvolvida com **Next.js** e **Tailwind CSS**, que permite aos usuários consultar informações meteorológicas a partir de uma localização específica. Utilizando a API da OpenWeather, a aplicação retorna dados relevantes sobre o clima, oferecendo uma experiência de usuário dinâmica e responsiva.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Consulta Meteorológica**: Digite uma localização para obter informações detalhadas sobre o clima atual.
+- **Dados Retornados**:
+  - **Umidade**: Percentual de umidade no ar.
+  - **Temperatura**: Temperatura atual em graus Celsius.
+  - **Sensação Térmica**: Sensação de calor percebida pelo corpo humano.
+  - **Vento**: Velocidade e direção do vento.
+  - **Descrição do Tempo**: Resumo das condições meteorológicas (ex: claro, nublado, chuvas, etc.).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js**: Framework React para construção de aplicações web escaláveis e otimizadas.
+- **Tailwind CSS**: Framework CSS utilitário que permite criar interfaces personalizadas e responsivas de forma rápida e eficaz.
+- **OpenWeather API**: Serviço que fornece dados meteorológicos em tempo real e previsões.
 
-## Learn More
+## Como Executar o Projeto
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/username/weather-app.git
+   cd weather-app
