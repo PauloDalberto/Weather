@@ -11,9 +11,9 @@ export default function Home() {
   const [weatherData, setWeatherData] = useState<WeatherDataProps | null>(null);
   const { fullYear, fullDate } = GetDate();
 
-  async function handleCity(event: any) {
+  async function handleCity(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const cityName = event.target.city.value;
+    const cityName = event.currentTarget.city.value;
     const data = await FetchWeatherData(cityName);
     setWeatherData(data);
   }
