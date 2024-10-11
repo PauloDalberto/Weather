@@ -8,7 +8,7 @@ import { TiWeatherSunny, TiWeatherWindy, TiWeatherCloudy } from "react-icons/ti"
 import { WiHumidity } from "react-icons/wi";
 
 export default function Home() {
-  const [weatherData, setWeatherData] = useState<WeatherDataProps | null>(null);
+  const [weatherData, setWeatherData] = useState<WeatherDataProps>();
   const { fullYear, fullDate } = GetDate();
 
   async function handleCity(event: React.FormEvent<HTMLFormElement>) {
