@@ -72,7 +72,9 @@ export default function Home() {
 
             <div className="flex flex-col gap-2">
               <span className="text-gray7  text-lg font-bold">Sensação térmica</span>
-              <p className="text-2xl font-bold text-black">{Number((weatherData?.main.feels_like as number) - 273.15).toFixed(1)}ºC</p>
+              <p className="text-2xl font-bold text-black">
+                {!isNaN(weatherData?.main.feels_like as number) ? (weatherData?.main.feels_like as number - 273.15).toFixed(1) : "0"}ºC
+              </p>
             </div>
           </div>
 
@@ -95,7 +97,9 @@ export default function Home() {
 
         <div className="flex items-center mt-20 gap-2">
           <TiWeatherCloudy  size={96} className="text-blueLight1 "/>
-          <h1 className="text-white text-6xl">{Number((weatherData?.main.temp as number) - 273.15).toFixed(1)}ºC</h1>
+          <h1 className="text-white text-6xl">
+            {!isNaN(weatherData?.main.temp as number) ? (weatherData?.main.temp as number - 273.15).toFixed(1) : '0'}ºC
+          </h1>
         </div>
 
         <hr className="my-6 border-blueLight1"/>
