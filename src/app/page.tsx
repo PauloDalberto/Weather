@@ -1,5 +1,6 @@
 'use client'
 
+import Modal from "@/components/Modal";
 import { FetchWeatherData } from "@/services/api";
 import { GetDate } from "@/utils/getDate";
 import { MagnifyingGlassIcon, UserIcon } from "@heroicons/react/24/outline";
@@ -9,12 +10,13 @@ import { WiHumidity } from "react-icons/wi";
 
 export default function Home() {
   const [weatherData, setWeatherData] = useState<WeatherDataProps>();
+  const [error, setError] = useState(false);
   const { fullYear, fullDate } = GetDate();
 
   async function handleCity(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const cityName = event.currentTarget.city.value;
-    const data = await FetchWeatherData(cityName);
+    const data = await FetchWeatherData(cityName, setError);
     setWeatherData(data);
   }
 
@@ -98,6 +100,8 @@ export default function Home() {
 
         <hr className="my-6 border-blueLight1"/>
       </section>
+
+      {error && <Modal/>}
     </main>
   );
 }
