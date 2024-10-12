@@ -11,18 +11,17 @@
   - **Umidade**: Percentual de umidade no ar.
   - **Temperatura**: Temperatura atual em graus Celsius.
   - **Sensação Térmica**: Sensação de calor percebida pelo corpo humano.
-  - **Vento**: Velocidade e direção do vento.
+  - **Vento**: Velocidade do vento.
   - **Descrição do Tempo**: Resumo das condições meteorológicas (ex: claro, nublado, chuvas, etc.).
 
 ## Tecnologias Utilizadas
 
 - **Next.js**: Framework React para construção de aplicações web escaláveis e otimizadas.
 - **Tailwind CSS**: Framework CSS utilitário que permite criar interfaces personalizadas e responsivas de forma rápida e eficaz.
-- **OpenWeather API**: Serviço que fornece dados meteorológicos em tempo real e previsões.
+- **OpenWeather API**: Serviço que fornece dados meteorológicos em tempo real.
 
 ## Como Executar o Projeto
 
-1. **Clone o repositório**:
+1. **Visite o deploy do projeto**:
    ```bash
-   git clone https://github.com/username/weather-app.git
-   cd weather-app
+   https://weather-three-steel.vercel.app/
